@@ -4,7 +4,7 @@
 -- Nox
 -- http://ankulua.boards.net/thread/167/brave-exvius-ffbeauto-farming-explorations
 
-ver = "ffbeAuto Z19a"
+ver = "ffbeAuto Z20a"
 ALver = "0"															-- AnkuLua version string
 ALpro = true														-- is this AnkuLua a Pro and not trial?
 
@@ -12,6 +12,20 @@ Settings:setCompareDimension(true, 600)
 Settings:setScriptDimension(true, 600)
 setImmersiveMode(true)
 Settings:set("MinSimilarity", 0.8)
+--- This checks the version number on github to see if an update is needed, then downloads the newest files ---
+getNewestVersion = loadstring(httpGet("https://raw.githubusercontent.com/seebadoris/BEFF/master/version.lua"))
+latestVersion = getNewestVersion()
+currentVersion = dofile(localPath .."version.lua")
+print (currentVersion)
+print (latestVersion)
+if currentVersion == latestVersion then
+	toast ("You are running the most current version!")
+else
+	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/version.lua", localPath .."version.lua")
+	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/PalPowerUp.lua", localPath .."PalPowerUp.lua")
+	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/imageupdater.lua", localPath .."imageupdater.lua")
+	scriptExit("You have Updated PalPowerUp bot!")
+end
 
 exploration = Pattern("exploration.png"):similar(0.5)
 autobtn = Pattern("auto.png"):similar(0.9)
