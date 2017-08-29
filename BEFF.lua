@@ -10,6 +10,7 @@ ALpro = true -- is this AnkuLua a Pro and not trial?
 
 localPath = scriptPath()
 setImagePath(localPath .. "images")
+commonLib = loadstring(httpGet("https://raw.githubusercontent.com/AnkuLua/commonLib/master/commonLib.lua"))()
 
 Settings:setCompareDimension(true, 600)
 Settings:setScriptDimension(true, 600)
