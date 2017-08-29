@@ -26,7 +26,7 @@ if currentVersion == latestVersion then
 	toast ("You are running the most current version!")
 else
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/version.lua", localPath .."version.lua")
-	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/PalPowerUp.lua", localPath .."PalPowerUp.lua")
+	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/BEFF.lua", localPath .."PalPowerUp.lua")
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/imageupdater.lua", localPath .."imageupdater.lua")
 	scriptExit("Updated!")
 end
