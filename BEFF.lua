@@ -6,7 +6,10 @@
 
 ver = "ffbeAuto Z20a"
 ALver = "0"															-- AnkuLua version string
-ALpro = true														-- is this AnkuLua a Pro and not trial?
+ALpro = true -- is this AnkuLua a Pro and not trial?
+
+localPath = scriptPath()
+setImagePath(localPath .. "images")
 
 Settings:setCompareDimension(true, 600)
 Settings:setScriptDimension(true, 600)
