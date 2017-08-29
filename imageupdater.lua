@@ -1,4 +1,4 @@
 localPath = scriptPath()
 imagePath = (localPath .. "image/")
-httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/image/zzzz.png", imagePath .."zzzz.png")
+httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/image/ZZZZZ.png", imagePath .."ZZZZZ.png")
 scriptExit("Updated!")
