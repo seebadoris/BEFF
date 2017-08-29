@@ -9,7 +9,7 @@ ALver = "0"															-- AnkuLua version string
 ALpro = true -- is this AnkuLua a Pro and not trial?
 
 localPath = scriptPath()
-setImagePath(localPath .. "images")
+setImagePath(localPath .. "image")
 commonLib = loadstring(httpGet("https://raw.githubusercontent.com/AnkuLua/commonLib/master/commonLib.lua"))()
 
 Settings:setCompareDimension(true, 600)
