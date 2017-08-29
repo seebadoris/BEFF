@@ -24,7 +24,7 @@ else
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/version.lua", localPath .."version.lua")
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/PalPowerUp.lua", localPath .."PalPowerUp.lua")
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/imageupdater.lua", localPath .."imageupdater.lua")
-	scriptExit("You have Updated PalPowerUp bot!")
+	scriptExit("Updated!")
 end
 
 exploration = Pattern("exploration.png"):similar(0.5)
