@@ -31,7 +31,6 @@ else
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/version.lua", localPath .."version.lua")
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/BEFF.lua", localPath .."BEFF.lua")
 	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/imageupdater.lua", localPath .."imageupdater.lua")
-	httpDownload("https://raw.githubusercontent.com/seebadoris/BEFF/master/image/ZZZZZ.png", imagePath .."ZZZZZ.png")
 	scriptExit("Updated!")
 end
 
