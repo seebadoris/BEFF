@@ -3,7 +3,7 @@
 -- Memu 960x600 120dpi
 -- Nox
 -- http://ankulua.boards.net/thread/167/brave-exvius-ffbeauto-farming-explorations
-
+-- Test
 ver = "ffbeAuto Z20a"
 ALver = "0"															-- AnkuLua version string
 ALpro = true -- is this AnkuLua a Pro and not trial?
